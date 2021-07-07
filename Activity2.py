@@ -1,7 +1,7 @@
 def main():
-    print(1)
-    print(2)
-    print(f"Sum of 1 and 2 is {1+2}")
+    n1 = int(input("Enter number 1:"))
+    n2 = int(input("Enter number 2:"))
+    print(f"Sum of {n1} and {n2} is {n1+n2}")
 
 
 main()
