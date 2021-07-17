@@ -12,8 +12,7 @@ def cs_to_lot(string):
 
 def lot_to_cs(listOfTuples):
     string = ""
-    for i in listOfTuples:
-        (a, b) = i
+    for (a, b) in listOfTuples:
         string += a+"="+b+";"
     return string
 
