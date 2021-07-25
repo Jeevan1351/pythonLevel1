@@ -1,13 +1,10 @@
 def get_cs():
-    return input()
+    return "system=s;database=d;username=u;pas]sword=p"
 
 
 def cs_to_dict(string):
     string = string.split(';')
-    d = {}
-    for item in string:
-        l = item.split('=')
-        d[l[0]] = l[1]
+    d = {x.split('=')[0]: x.split('=')[1] for x in string}
     return d
 
 
