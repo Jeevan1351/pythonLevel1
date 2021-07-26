@@ -9,24 +9,21 @@ def read():
 
 def is_prime(n):
     if n <= 1:
-        return False
+        return 0
     elif n == 2:
-        return True
+        return 2
     elif n % 2 == 0:
-        return False
+        return 0
     else:
         for i in range(3, int(math.sqrt(n)) + 1, 2):
             if n % i == 0:
-                return False
-        return True
+                return 0
+        return n
 
 
 def get_sum(numbers):
-    total = 0
-    for i in numbers:
-        if is_prime(i):
-            total += i
-    return total
+    total = [is_prime(i) for i in numbers]
+    return sum(total)
 
 
 def output(total_value):
