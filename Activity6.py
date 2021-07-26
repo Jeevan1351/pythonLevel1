@@ -2,7 +2,9 @@ import math
 
 
 def read():
-    return input("Enter a few numbers").split()
+    nums = input("Enter a few numbers").split()
+    ints = [int(n) for n in nums]
+    return ints
 
 
 def is_prime(n):
@@ -27,18 +29,12 @@ def get_sum(numbers):
     return total
 
 
-def get_int_list(nums):
-    ints = [int(n) for n in nums]
-    return ints
-
-
 def output(total_value):
     print(f"Sum of all prime numbers = {total_value}")
 
 
 def main():
     nums = read()
-    nums = get_int_list(nums)
     sump = get_sum(nums)
     output(sump)
 
