@@ -23,6 +23,7 @@ def is_prime(n):
 
 def get_sum(numbers):
     total = [is_prime(i) for i in numbers]
+    # print(total)
     return sum(total)
 
 
@@ -36,4 +37,5 @@ def main():
     output(sump)
 
 
-main()
+if __name__ == '__main__':
+    main()
