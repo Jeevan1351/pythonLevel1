@@ -12,7 +12,7 @@ def is_prime(n):
         return False
     elif n == 2:
         return True
-    elif n > 2 and n % 2 == 0:
+    elif n % 2 == 0:
         return False
     else:
         for i in range(3, int(math.sqrt(n)) + 1, 2):
